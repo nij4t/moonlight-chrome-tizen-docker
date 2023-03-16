@@ -5,6 +5,7 @@ An easy method for building Moonlight for Samsung TV
 - Moonlight developers: https://moonlight-stream.org
 - Samsung developers: https://github.com/SamsungDForum/moonlight-chrome
 - This Dockerfile and support files have been adapted from [jellyfin-docker-tizen](https://github.com/babagreensheep/jellyfin-tizen-docker)
+- Dockerfile readapted for my repository tizen from [pablojrl123](https://github.com/pablojrl123/moonlight-tizen-docker)
 
 ## Usage
 1. Enable developer mode on the TV (more information on [official Samsung guide](https://developer.samsung.com/smarttv/develop/getting-started/using-sdk/tv-device.html)):

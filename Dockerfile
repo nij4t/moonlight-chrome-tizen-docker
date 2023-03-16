@@ -53,7 +53,7 @@ RUN ./emsdk activate latest-fastcomp
 WORKDIR ../.. 
 
 # Build moonlight
-RUN git clone --recurse-submodules --depth 1 https://github.com/SamsungDForum/moonlight-chrome
+RUN git clone --recurse-submodules --depth 1 https://github.com/KyroFrCode/moonlight-chrome-tizen
 RUN cmake \
 	-DCMAKE_TOOLCHAIN_FILE=/home/moonlight/emscripten-release-bundle/emsdk/fastcomp/emscripten/cmake/Modules/Platform/Emscripten.cmake \
 	-G Ninja \

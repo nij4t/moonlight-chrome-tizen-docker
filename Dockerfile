@@ -54,7 +54,7 @@ WORKDIR ../..
 
 # Build moonlight
 #RUN git clone --recurse-submodules --depth 1 https://github.com/KyroFrCode/moonlight-chrome-tizen
-git clone https://github.com/KyroFrCode/moonlight-chrome-tizen
+RUN git clone https://github.com/KyroFrCode/moonlight-chrome-tizen
 
 RUN cmake \
 	-DCMAKE_TOOLCHAIN_FILE=/home/moonlight/emscripten-release-bundle/emsdk/fastcomp/emscripten/cmake/Modules/Platform/Emscripten.cmake \
@@ -83,7 +83,7 @@ RUN mv build/widget/MoonlightWasm.wgt .
 #	build \
 #	emscripten-1.39.4.7-linux64.zip \
 #	emscripten-release-bundle \
-#	moonlight-chrome \
+#	moonlight-chrome-tizen \
 #	tizen-package-expect.sh \
 #	web-cli_Tizen_Studio_5.0_ubuntu-64.bin \
 #	.emscripten \

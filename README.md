@@ -20,7 +20,11 @@ An easy method for building Moonlight for Samsung TV
 	docker build -t moonlight-tizen .
 	```
 	This will take a while.
-3. Deploy the application to the TV:
+
+ 	> Note: If you are running Docker on a Mac with a silicon chip (M1/M2 etc), change the first line in `Dockerfile` to  
+	> `FROM --platform=linux/amd64 ubuntu:22.04` before building to ensure compability.
+
+4. Deploy the application to the TV:
 	- Run and enter a container; the container will be removed automatically on exit:
 	 ```
 	 docker run -it --rm moonlight-tizen
